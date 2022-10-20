@@ -1,1 +1,1 @@
-Backend desenvolvido em NodeJS integrado com banco de dados MongoDB e comunicaçao pub/sub via Mqtt.
+API desenvolvida em NodeJS seguindo os padrões HL7 para implementação do FHIR.
