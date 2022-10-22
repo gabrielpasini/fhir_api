@@ -14,7 +14,7 @@
           ]
         },
         "system": "urn:oid:1.2.36.146.595.217.0.1",
-        "value": "12345",
+        "value": "123456789",
         "period": {
           "start": "2001-05-06"
         },
@@ -26,50 +26,27 @@
     "active": true,
     "name": [
       {
-        "use": "official",
-        "family": "Chalmers",
-        "given": ["Peter", "James"]
-      },
-      {
         "use": "usual",
-        "given": ["Jim"]
-      },
-      {
-        "use": "maiden",
-        "family": "Windsor",
-        "given": ["Peter", "James"],
-        "period": {
-          "end": "2002"
-        }
+        "family": "de Oliveira",
+        "given": ["Maria"]
       }
     ],
     "telecom": [
       {
-        "use": "home"
-      },
-      {
         "system": "phone",
-        "value": "(03) 5555 6473",
-        "use": "work",
+        "value": "(51) 3333 3333",
+        "use": "home",
         "rank": 1
       },
       {
         "system": "phone",
-        "value": "(03) 3410 5613",
+        "value": "(51) 99999 9999",
         "use": "mobile",
         "rank": 2
-      },
-      {
-        "system": "phone",
-        "value": "(03) 5555 8834",
-        "use": "old",
-        "period": {
-          "end": "2014"
-        }
       }
     ],
-    "gender": "male",
-    "birthDate": "1974-12-25",
+    "gender": "female",
+    "birthDate": "1984-12-25",
     "_birthDate": {
       "extension": [
         {
@@ -82,16 +59,10 @@
     "address": [
       {
         "use": "home",
-        "type": "both",
-        "text": "534 Erewhon St PeasantVille, Rainbow, Vic  3999",
-        "line": ["534 Erewhon St"],
-        "city": "PleasantVille",
-        "district": "Rainbow",
-        "state": "Vic",
-        "postalCode": "3999",
-        "period": {
-          "start": "1974-12-25"
-        }
+        "line": ["Osvaldo Aranha 2222"],
+        "city": "Porto Alegre",
+        "postalCode": "90029906",
+        "country": "BR"
       }
     ],
     "contact": [
@@ -144,6 +115,134 @@
     ],
     "managingOrganization": {
       "reference": "Organization/1"
+    }
+  },
+  {
+    "resourceType": "Patient",
+    "id": "1",
+    "identifier": [
+      {
+        "use": "official",
+        "type": {
+          "text": "BSN"
+        },
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+        "value": "123456789"
+      },
+      {
+        "use": "official",
+        "type": {
+          "text": "BSN"
+        },
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+        "value": "123456789"
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "use": "usual",
+        "family": "da Silva",
+        "given": ["João"]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "(51) 4444 4444",
+        "use": "home",
+        "rank": 1
+      },
+      {
+        "system": "phone",
+        "value": "(51) 98888 8888",
+        "use": "mobile",
+        "rank": 2
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1990-03-13",
+    "deceasedBoolean": false,
+    "address": [
+      {
+        "use": "home",
+        "line": ["Rua dos Andradas 1000"],
+        "city": "Porto Alegre",
+        "postalCode": "90020006",
+        "country": "BR"
+      }
+    ],
+    "maritalStatus": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "36629006",
+          "display": "Legally married"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M"
+        }
+      ]
+    },
+    "multipleBirthBoolean": false,
+    "photo": [
+      {
+        "contentType": "image/jpeg",
+        "url": "Binary/f006"
+      }
+    ],
+    "contact": [
+      {
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "127850001",
+                "display": "Wife"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "N"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "code": "WIFE"
+              }
+            ]
+          }
+        ],
+        "name": {
+          "use": "usual",
+          "text": "Ariadne Bor-Jansma"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+31201234567",
+            "use": "home"
+          }
+        ]
+      }
+    ],
+    "communication": [
+      {
+        "language": {
+          "coding": [
+            {
+              "system": "urn:ietf:bcp:47",
+              "code": "nl-NL",
+              "display": "Dutch"
+            }
+          ]
+        },
+        "preferred": true
+      }
+    ],
+    "managingOrganization": {
+      "reference": "Organization/f201",
+      "display": "AUMC"
     }
   }
 ]
