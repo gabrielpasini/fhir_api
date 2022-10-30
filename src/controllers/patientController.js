@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
   try {
     if (!id)
       return res.status(200).send({
-        patient: patients,
+        allPatients: patients,
       });
 
     const searchedPatient = patients.find((item) => item.id === id);
